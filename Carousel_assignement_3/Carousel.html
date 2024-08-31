@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FallBack Carousel</title>
+</head>
+<link rel="stylesheet" href="Carousel.css">
+
+<body>
+  <div class="carousel">
+    <div class="title">
+      <h2>Carousel with Fallback Image</h2>
+    </div>
+    <div class="carousel-images">
+      <img src="image1.jpg" alt="Image 1" onerror="this.onerror=null; this.src='fallback.jpg';">
+      <img src="image2.jpg" alt="Image 2" onerror="this.onerror=null; this.src='fallback.jpg';">
+      <img src="image3.jpg" alt="Image 3" onerror="this.onerror=null; this.src='fallback.jpg';">
+    </div>
+    <button class="carousel-control prev">&lt;</button>
+    <button class="carousel-control next">&gt;</button>
+    <div class="carousel-indicators">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <script src="Carousel.js"></script>
+
+</body>
+
+</html>
